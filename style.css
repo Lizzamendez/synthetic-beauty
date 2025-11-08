@@ -1,14 +1,12 @@
 body {
   margin: 0;
   background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
 }
 
 .intro {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 100vh;
@@ -44,14 +42,15 @@ body {
   100% { opacity: 0; visibility: hidden; }
 }
 
-
 .carousel {
   position: relative;
   width: 80%;
   max-width: 800px;
+  margin: auto;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  margin-top: 10vh;
 }
 
 .slides {
@@ -80,7 +79,6 @@ body {
 
 .prev { left: 10px; }
 .next { right: 10px; }
-
 
 @media (max-width: 600px) {
   .carousel {
